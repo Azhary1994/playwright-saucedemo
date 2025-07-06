@@ -75,32 +75,6 @@ ENV=staging npx playwright test
 npx playwright show-report
 ```
 
-### 📈 Allure Report (if configured)
-
-1. Install Allure:
-
-   ```bash
-   npm install -D allure-playwright
-   ```
-
-2. Add this to your `playwright.config.js`:
-
-   ```js
-   reporter: [
-     ['list'],
-     ['html', { open: 'never' }],
-     ['allure-playwright'],
-   ],
-   ```
-
-3. Generate & open the Allure report:
-
-   ```bash
-   npx allure generate ./allure-results --clean -o ./allure-report
-   npx allure open ./allure-report
-   ```
-
----
 
 ## 🗂 Folder Structure
 
