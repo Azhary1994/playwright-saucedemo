@@ -9,7 +9,7 @@ module.exports = {
   timeout: 50000,
   use: {
   baseURL: envConfig.baseURL,
-    headless: false, // Show browser
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
