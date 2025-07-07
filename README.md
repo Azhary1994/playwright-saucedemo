@@ -117,7 +117,6 @@ playwright-saucedemo/
 |--------------------|----------------------------------------|
 | **Playwright**     | Automation framework                   |
 | **Playwright Test**| Built-in runner & assertions           |
-| **Allure**         | Rich test reports (optional)           |
 | **ESLint/Prettier**| Code quality & formatting              |
 | **GitHub Actions** | CI pipeline for auto test execution    |
 
@@ -130,7 +129,7 @@ playwright-saucedemo/
 - ✅ Environment config (staging, production)
 - ✅ Parallel cross-browser support (Chromium, Firefox, WebKit)
 - ✅ Retry logic, video & screenshot on failure
-- ✅ HTML + Allure reports
+- ✅ HTML reports
 - ✅ Tags & grep filtering (e.g., `@smoke`, `@regression`)
 - ✅ GitHub Actions CI/CD integration
 - ✅ ESLint + Prettier setup
@@ -141,8 +140,9 @@ playwright-saucedemo/
 
 - Focused only on [https://www.saucedemo.com](https://www.saucedemo.com)
 - The Order confirmation is already covered in the checkout test
-- I Assumed that all of the requested scenarios are seperate tests so that is why I made it into different files/tests.
-- 
+- I Assumed that the requested scenarios are different tests so that is why I made it into different files/tests.
+- I Added only 3 tests to the smoke and the rest 12 to the regression just to show the idea of grouping/tags
+
 
 ---
 

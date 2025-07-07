@@ -8,7 +8,7 @@ const environments = require('../config/env.config');
 const env = process.env.ENV || 'staging';
 
 
-test('Complete checkout with tax and total verification', async ({ page }) => {
+test('Complete checkout with tax and total verification @regression', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);

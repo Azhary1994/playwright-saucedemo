@@ -6,7 +6,7 @@ const users = require('../test-data/users.json');
 const environments = require('../config/env.config');
 const env = process.env.ENV || 'staging';
 
-test('Cart shows correct items and prices', async ({ page }) => {
+test('Cart shows correct items and prices @regression', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);

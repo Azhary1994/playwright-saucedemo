@@ -4,7 +4,7 @@ const users = require('../test-data/users.json');
 const environments = require('../config/env.config');
 const env = process.env.ENV || 'staging';
 
-test('Login with valid credentials', async ({ page }) => {
+test('Login with valid credentials @smoke', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
   await loginPage.goto();
@@ -13,7 +13,7 @@ test('Login with valid credentials', async ({ page }) => {
   await expect(page).toHaveURL('/inventory.html');
 });
 
-test('Login with invalid credentials should show error', async ({ page }) => {
+test('Login with invalid credentials should show error @regression', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
   await loginPage.goto();
